@@ -1,0 +1,13 @@
+!!! html
+%html{lang: 'en'}
+  %head
+    %link{rel: 'icon', href: asset_path('favicon.ico')}
+    %title OHS Programming Club
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    /[if lt IE 9]
+      = javascript_include_tag 'ie', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body{class: params[:controller]}
+    .container= yield
+
