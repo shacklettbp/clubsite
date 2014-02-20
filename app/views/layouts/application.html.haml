@@ -9,5 +9,6 @@
       = javascript_include_tag 'ie', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body{class: params[:controller]}
+    = render 'header'
     .container= yield
 
