@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.0.2'
-gem 'mysql2'
 gem 'sass'
 gem 'sass-rails', '~> 4.0.0'
 gem 'haml'
